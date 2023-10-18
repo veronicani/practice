@@ -2,19 +2,80 @@
   box-sizing: border-box; 
 }
 
+html {
+  font-size: 100%;
+}
+
+
 header, footer {
-  height: 100px;
-  border: 2px solid black;
+  height: 10rem;
+  border: 1px solid blue;
+  background-color: lightblue;
   clear: both;
 }
 
 section {
-  height: 300px;
-  width: 20%;
-  border: 2px solid black;
-  float: left;
+  height: 15rem;
+  border: 1px solid blue;
 }
 
-.section-big {
-  width: 40%;
+body > section {
+  width: 100%;
+}
+
+section section {
+  float: left; 
+  /* have to add floats to children sections in main section, otherwise the footer will only clear the "main-section"  */
+}
+
+.sec-50 {
+  width: 50%;
+  background-color: pink;
+  /* float: left;  */
+}
+.sec-30 {
+  width: 30%;
+  background-color: aquamarine;
+  /* float: left; */
+}
+.sec-20 {
+  width: 20%;
+  background-color: yellowgreen;
+  /* float: left; */
+}
+
+.image {
+  display: flex;
+} 
+
+h1 {
+  font-size: 2em;
+  padding: 1em;
+  margin: auto;
+  border: .2em solid yellowgreen;
+}
+
+
+figure {
+  width: 5rem;
+  height: 5rem;
+  background-color: blanchedalmond;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 850px) {
+  header, footer {
+    clear: both;
+  }
+  .sec-50 {
+    width: 100%;
+    float: left;
+  }
+  .sec-30 {
+    width: 50%;
+  }
+  .sec-20 {
+    width: 50%;
+  }
 }
