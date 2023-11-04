@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 62.5%;
+}
+/* || Utilites */
+.no-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  margin: 1rem;
+}
+/* || Header */
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+/* || Form */
+form {
+  max-width: 50%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset.form__section > legend {
+  font-size: 1.5rem;
+}
+
+fieldset.form__multiselect > legend {
+  font-size: 1.2rem;
+}
+
+
