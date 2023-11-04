@@ -9,145 +9,229 @@
 </head>
 <body>
   <header>
-    <p>Inside of header - let's add a navbar with some essential links</p>
-    <nav>
+    <section class="logo">
+      <h1><a href="">Box Office Mojo</a></h1>
+      <h2><a href="">by Imdb Pro</a></h2>
+    </section>
+    <form class="searchbar">
+      <label for="search">Search for titles</label>
+      <input type="search" name="search" id="search" placeholder="Search for Titles">
+      <button>Search</button>
+    </form>
+    <section class="social">
+      <div class="dropdown">
+        <button class="btn--drop">ImDBPro <i class="fa fa-caret-down"></i> </button>
+      </div>
+      <div class="social-icons">
+        <i>FB</i>
+        <i>Twitter</i>
+      </div>
+    </section>
+    <nav class="nav__main">
       <ul class="no-bullets">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="">Domestic</a></li>
+        <li><a href="">International</a></li>
+        <li><a href="">Worldwide</a></li>
+        <li><a href="">Calendar</a></li>
+        <li><a href="">All Time</a></li>
+        <li><a href="">Showdowns</a></li>
+        <li><a href="">Indices</a></li>
       </ul>
     </nav>
-    <hr>
   </header>
   <main>
-    <section>
-      <h1>Here is the main section of our page - it consists of new articles</h1>
-      <article>
-        <h2>Article 1 - 1995 was a pretty crazy year for programming languages!</h2>
-        <p>Don't believe me? Just check this out:</p>
-        <table>
+    <nav class="nav__sub">
+      <ul class="no-bullets">
+        <li><a href="">Daily</a></li>
+        <li><a href="">Weekend</a></li>
+        <li><a href="">Weekly</a></li>
+        <li><a href="">Monthly</a></li>
+        <li><a href="">Quarterly</a></li>
+        <li><a href="">Yearly</a></li>
+        <li><a href="">Seasons</a></li>
+        <li><a href="">Holidays</a></li>
+      </ul>
+    </nav>
+    <section class="sec__main">
+      <section class="sec__sub">
+        <h3>Shortcuts</h3>
+        <nav class="nav__shortcuts">
+          <ul class="no-bullets">
+            <li><a href="">Brands</a></li>
+            <li><a href="">Genres</a></li>
+            <li><a href="">Franchises</a></li>
+            <li><a href="">Release Schedule</a></li>
+            <li><a href="">Top 2023 Movies</a></li>
+            <li><a href="">Worldwide 2023</a></li>
+            <li><a href="">All Time (Domestic)</a></li>
+            <li><a href="">All Time (Worldwide)</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="sec__sub">
+        <h3>Release Schedule</h3>
+        <table class="tb--release-sched">
           <thead>
             <tr>
-              <th>Language</th>
-              <th>Designed By</th>
-              <th>First Approved</th>
+              <th>November 3, 2023</th>
+              <th>Theatres</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>C++</td>
-              <td>Bjarne Stroustrup</td>
-              <td>1983</td>
+              <td>Priscilla</td>
+              <td>Wide</td>
             </tr>
             <tr>
-              <td>Python</td>
-              <td>Guido van Rossum</td>
-              <td>1991</td>
+              <td>Radical</td>
+              <td>Limited</td>
             </tr>
             <tr>
-              <td>Ruby</td>
-              <td>Yukihiro Matsumoto ("Matz")</td>
-              <td>1995</td>
+              <td>Rumble Through the Dark</td>
+              <td>Limited</td>
             </tr>
             <tr>
-              <td>Javascript</td>
-              <td>Brendan Eich</td>
-              <td>1995</td>
+              <td>The Tunnel to Summer, the Ex...</td>
+              <td>Limited</td>
             </tr>
             <tr>
-              <td>Java</td>
-              <td>James Gosling</td>
-              <td>1995</td>
+              <td>Death on the Border</td>
+              <td>Limited</td>
             </tr>
             <tr>
-              <td>PHP</td>
-              <td>Rasmus Lerdorf</td>
-              <td>1995</td>
+              <td>Gran Turismo<span class="sub-title">2023 Reissue</span></td>
+              <td>Wide</td>
+            </tr>
+            <tr>
+              <td>Deadland</td>
+              <td>Limited</td>
+            </tr>
+            <tr>
+              <td>The March King's Daughter</td>
+              <td>Wide</td>
+            </tr>
+            <tr>
+              <td>What Happens Later</td>
+              <td>Wide</td>
             </tr>
           </tbody>
         </table>
-      </article>
-      <article>
-        <h2>Article 2 - Coming soon...</h2>
-      </article>
+        <table class="tb--release-sched">
+          <thead>
+            <tr>
+              <th>November 4, 2023</th>
+              <th>Theatres</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>Titanic: The Musical</td>
+            <td>Limited</td>
+          </tbody>
+        </table>
+      </section>
+      <a href="">More >></a>
     </section>
-    <section>
-      <h1>Contact Us!</h1>
-      <form action="">
-        <fieldset class="form__section">
-          <legend class="form__section">
-            <h3>General Information</h3>
-          </legend>
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name">
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="dob">Date of Birth</label>
-          <input id="dob" name="dob" type="date">
-        </fieldset>
-        <fieldset class="form__section">
-          <legend>
-            <h3>Essential Questions</h3>
-          </legend>
-          <fieldset class="form__multiselect">
-            <legend>What kind of work do you need?</legend>
-            <div>
-              <label for="programming">Programming</label>
-              <input type="checkbox" name="programming" id="programming">
-            </div>
-            <div>
-              <label for="design">Design</label>
-              <input type="checkbox" name="design" id="design">
-            </div>
-            <div>
-              <label for="singing">Singing</label>
-              <input type="checkbox" name="singing" id="singing">
-            </div>
-            <div>
-              <label for="comedy">Comedy</label>
-              <input type="checkbox" name="comedy" id="comedy">
-            </div>
-          </fieldset>
-          <fieldset class="form__multiselect">
-            <legend>How interested are you in our design skills?</legend>
-            <div>
-              <label for="very-low">Very Low</label>
-              <input type="radio" name="design-interest" id="very-low">
-            </div>
-            <div>
-              <label for="low">Low</label>
-              <input type="radio" name="design-interest" id="low">
-            </div>
-            <div>
-              <label for="medium">Medium</label>
-              <input type="radio" name="design-interest" id="medium">
-            </div>
-            <div>
-              <label for="high">High</label>
-              <input type="radio" name="design-interest" id="high">
-            </div>
-            <div>
-              <label for="very-high">Very High</label>
-              <input type="radio" name="design-interest" id="very-high">              
-            </div>
-          </fieldset>
-        </fieldset>
-        <button type="submit">Submit me!</button>
-      </form>
+    <section class="sec__sub">
+      <h3>Latest Dailies</h3>
+      <div class="select-drop">
+        <label for="date-select">Select Date</label>
+        <select name="date-select" id="date-select">
+          <option value="">Sun Oct 29</option>
+          <option value="">Mon Oct 30</option>
+          <option value="">Wed Nov 1</option>
+          <option value="" selected>Thu Nov 2</option>
+        </select>
+      </div>
+      <table class="tb--stripe">
+        <tr>
+          <td>Five Nights at Freddy's</td>
+          <td>$2,118,180</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift: The Eras Tour</td>
+          <td>$1,535,823</td>
+        </tr>
+        <tr>
+          <td>Killers of the Flower Moon</td>
+          <td>$1,005,437</td>
+        </tr>
+        <tr>
+          <td>After Death</td>
+          <td>$400,932</td>
+        </tr>
+        <tr>
+          <td>The Exorcist: Believer</td>
+          <td>$243,250</td>
+        </tr>
+      </table>
+      <a href="">More >></a>
     </section>
-    <section>
-      <video controls width="500">
-        <source src="/Users/coding/Desktop/duck-vid.mov">
-        <p>Sorry, your browser doesn't support embedded videos. You can watch it on <a href="https://youtu.be/kY7tCpXxVWE">Youtube</a> instead.</p>
-      </video>
-      <iframe width="220" height="391" src="https://www.youtube.com/embed/JDN0JjQKaHI" title="Duck #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5CLwcVp4tfZqwxHLr77dnY?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="sec__sub">
+      <h3>Latest Weekend: Oct 27-29</h3>
+      <table class="tb--stripe">
+        <tr>
+          <td>Five Nights at Freddy's</td>
+          <td>$80.0M</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift: The Eras Tour</td>
+          <td>$15.4M</td>
+        </tr>
+        <tr>
+          <td>Killers of the Flower Moon</td>
+          <td>$9.3M7</td>
+        </tr>
+        <tr>
+          <td>After Death</td>
+          <td>$5.1M</td>
+        </tr>
+        <tr>
+          <td>The Exorcist: Believer</td>
+          <td>$3.3M</td>
+        </tr>
+      </table>
+      <a href="">More >></a>
+    </section>
+    <section class="sec__sub sec__sub-66">
+      <h3>Recent Release Date Changes</h3>
+      <table class="tb--stripe">
+        <tr>
+          <td>Tiger 3</td>
+          <td>Limited</td>
+          <td>Nov 12, 2023</td>
+          <td><span>&rarr;</span></td>
+          <td>Nov 11, 2023</td>
+        </tr>
+        <tr>
+          <td>The Sitting Duck</td>
+          <td>Wide</td>
+          <td>Nov 8, 2023</td>
+          <td><span>&rarr;</span></td>
+          <td>Oct 27, 2023</td>
+        </tr>
+        <tr>
+          <td>Terrifier 2 <span class="sub-title">2023 Re-release</span></td>
+          <td>Limited</td>
+          <td>Jun 13, 2025</td>
+          <td><span>&rarr;</span></td>
+          <td>Removed</td>
+        </tr>
+        <tr>
+          <td>Untitled Pixar</td>
+          <td>Limited</td>
+          <td>Jun 13, 2025</td>
+          <td><span>&rarr;</span></td>
+          <td>Removed</td>
+        </tr>
+        <tr>
+          <td>Untitled Disney</td>
+          <td>Limited</td>
+          <td>Mar 21, 2025</td>
+          <td><span>&rarr;</span></td>
+          <td>Removed</td>
+        </tr>
+      </table>
     </section>
   </main>
-  <footer>
-    <p>Here is our footer - let's make sure we copyright <span>&copy</span> this!</p>
-  </footer>
 </body>
 </html>
